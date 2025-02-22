@@ -10,32 +10,36 @@ enum ProService {
   YES = 1,
   NO = 0,
 }
+
 interface ServiceProps {
   title: string;
   pro: ProService;
   description: string;
 }
+
 const serviceList: ServiceProps[] = [
   {
-    title: "Custom Domain Integration",
+    title: "Personalized Business Strategy",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing.",
-    pro: 0,
+      "Tailored guidance to help you make the right entrepreneurial moves and scale your business efficiently.",
+    pro: 1,
   },
   {
-    title: "Social Media Integrations",
+    title: "Exclusive Networking Events",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, dicta.",
+      "Gain access to high-impact meetups where you can connect with industry leaders and visionaries.",
+    pro: 1,
+  },
+  {
+    title: "Chess-Based Problem Solving",
+    description:
+      "Refine your strategic thinking by applying chess principles to real-world business challenges.",
     pro: 0,
   },
   {
-    title: "Email Marketing Integrations",
-    description: "Lorem dolor sit amet adipisicing.",
-    pro: 0,
-  },
-  {
-    title: "SEO Optimization",
-    description: "Lorem ipsum dolor sit amet consectetur.",
+    title: "Mastermind Sessions",
+    description:
+      "Engage in focused discussions with like-minded entrepreneurs to share insights and accelerate growth.",
     pro: 1,
   },
 ];
@@ -44,17 +48,15 @@ export const ServicesSection = () => {
   return (
     <section id="services" className="container py-24 sm:py-32">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Services
+        Our Services
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        Grow Your Business
+        Empowering You to Win
       </h2>
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        From marketing and sales to operations and strategy, we have the
-        expertise to help you achieve your goals.
+        Whether you're scaling a business or mastering strategy, our tailored services help you <span className="text-gray-100 font-medium"> think ahead and stay ahead</span>.
       </h3>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 w-full lg:w-[60%] mx-auto">
         {serviceList.map(({ title, description, pro }) => (
@@ -66,13 +68,13 @@ export const ServicesSection = () => {
               <CardTitle>{title}</CardTitle>
               <CardDescription>{description}</CardDescription>
             </CardHeader>
-            <Badge
+            {/* <Badge
               data-pro={ProService.YES === pro}
               variant="secondary"
               className="absolute -top-2 -right-3 data-[pro=false]:hidden"
             >
               PRO
-            </Badge>
+            </Badge> */}
           </Card>
         ))}
       </div>

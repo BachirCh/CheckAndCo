@@ -10,28 +10,28 @@ interface BenefitsProps {
 
 const benefitList: BenefitsProps[] = [
   {
-    icon: "Blocks",
-    title: "Build Brand Trust",
+    icon: "Users",
+    title: "Expand Your Network",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Meet like-minded entrepreneurs, chess enthusiasts, and strategic thinkers. Build meaningful connections that last.",
   },
   {
-    icon: "LineChart",
-    title: "More Leads",
+    icon: "Lightbulb",
+    title: "Sharpen Your Mind",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+      "Join exclusive workshops, chess tournaments, and strategy sessions designed to challenge and grow your skills.",
   },
   {
-    icon: "Wallet",
-    title: "Higher Conversions",
+    icon: "Rocket",
+    title: "Boost Your Business",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+      "Gain insights from industry leaders and leverage our platform to propel your business or career to new heights.",
   },
   {
-    icon: "Sparkle",
-    title: "Test Marketing Ideas",
+    icon: "Calendar",
+    title: "Exclusive Events",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Access curated events that combine chess, entrepreneurship, and networking in a dynamic and engaging way.",
   },
 ];
 
@@ -40,15 +40,14 @@ export const BenefitsSection = () => {
     <section id="benefits" className="container py-24 sm:py-32">
       <div className="grid lg:grid-cols-2 place-items-center lg:gap-24">
         <div>
-          <h2 className="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
+          <h2 className="text-lg text-primary mb-2 tracking-wider">Why Join?</h2>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Your Shortcut to Success
+            Your Next Move Starts Here
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-            ducimus reprehenderit architecto rerum similique facere odit
-            deleniti necessitatibus quo quae.
+            Checkmate&Connect is your gateway to mastering the art of strategy, 
+            whether on the chessboard or in the world of business and networking.
           </p>
         </div>
 
@@ -66,9 +65,9 @@ export const BenefitsSection = () => {
                     color="hsl(var(--primary))"
                     className="mb-6 text-primary"
                   />
-                  <span className="text-5xl text-muted-foreground/15 font-medium transition-all delay-75 group-hover/number:text-muted-foreground/30">
+                  {/* <span className="text-5xl text-muted-foreground/15 font-medium transition-all delay-75 group-hover/number:text-muted-foreground/30">
                     0{index + 1}
-                  </span>
+                  </span> */}
                 </div>
 
                 <CardTitle>{title}</CardTitle>

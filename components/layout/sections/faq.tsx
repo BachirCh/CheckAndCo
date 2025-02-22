@@ -13,33 +13,39 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Is this template free?",
-    answer: "Yes. It is a free NextJS Shadcn template.",
+    question: "Where do the events take place?",
+    answer: "Currently, events are held at Commons Zerktouni, Casablanca, every Wednesday at 6 PM. They are free and open to everyone!",
     value: "item-1",
   },
   {
-    question: "Duis aute irure dolor in reprehenderit in voluptate velit?",
+    question: "What kind of events does Checkmate&Connect organize?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam consectetur sapiente, iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "Our community hosts chess tournaments, entrepreneurship meetups, and networking sessions designed to bring like-minded people together.",
     value: "item-2",
   },
   {
     question:
-      "Lorem ipsum dolor sit amet Consectetur natus dolor minus quibusdam?",
+      "How can I book a seat for an event?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis.",
+      "Simply head to our events page and reserve your spot—it’s quick and easy!",
     value: "item-3",
   },
   {
-    question: "Excepteur sint occaecat cupidata non proident sunt?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    question: "Can I suggest a topic or host a workshop?",
+    answer: "Absolutely! We welcome fresh ideas. Reach out via our Contact page, and let’s discuss.",
     value: "item-4",
   },
   {
     question:
-      "Enim ad minim veniam, quis nostrud exercitation ullamco laboris?",
-    answer: "consectetur adipisicing elit. Sint labore.",
+      "Is Checkmate&Connect open to beginners?",
+    answer: "Yes! Whether you’re new to chess, business, or networking, our events cater to all levels.",
     value: "item-5",
+  },
+  {
+    question:
+      "Can I bring a friend?",
+    answer: "Of course! The more, the merrier. Invite your friends and grow the community together.",
+    value: "item-6",
   },
 ];
 

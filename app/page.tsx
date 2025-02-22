@@ -50,7 +50,7 @@ export default function Home() {
       <TestimonialSection />
       <TeamSection />
       <CommunitySection />
-      <PricingSection />
+      {/* <PricingSection /> */}
       <ContactSection />
       <FAQSection />
       <FooterSection />

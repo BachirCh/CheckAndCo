@@ -10,40 +10,40 @@ interface FeaturesProps {
 
 const featureList: FeaturesProps[] = [
   {
-    icon: "TabletSmartphone",
-    title: "Mobile Friendly",
+    icon: "Users",
+    title: "Community-Driven",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+      "Join a thriving network of entrepreneurs, chess enthusiasts, and professionals ready to collaborate and grow together.",
   },
   {
-    icon: "BadgeCheck",
-    title: "Social Proof",
+    icon: "Brain",
+    title: "Strategic Thinking",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+      "Refine your decision-making and problem-solving skills through chess, business insights, and expert-led discussions.",
   },
   {
-    icon: "Goal",
-    title: "Targeted Content",
+    icon: "Handshake",
+    title: "Genuine Connections",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      "Build meaningful relationships with like-minded individuals who share your passion for success and strategy.",
   },
   {
-    icon: "PictureInPicture",
-    title: "Strong Visuals",
+    icon: "Lightbulb",
+    title: "Inspiring Events",
     description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+      "Access exclusive workshops, networking events, and chess tournaments designed to challenge and elevate you.",
   },
   {
-    icon: "MousePointerClick",
-    title: "Clear CTA",
+    icon: "Trophy",
+    title: "Master Your Game",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+      "Learn from top entrepreneurs and chess masters, gaining insights that sharpen both your business acumen and gameplay.",
   },
   {
-    icon: "Newspaper",
-    title: "Clear Headline",
+    icon: "Globe",
+    title: "Worldwide Reach",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "Engage with a diverse community of thinkers and innovators from different industries and backgrounds.",
   },
 ];
 
@@ -51,17 +51,18 @@ export const FeaturesSection = () => {
   return (
     <section id="features" className="container py-24 sm:py-32">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Features
+        Our Unique Edge
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        What Makes Us Different
+        Why
+        <span className="text-transparent pl-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
+          C&C?
+        </span>
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-        facere tenetur.
+        We blend the <strong> strategic depth of chess</strong>, the <strong> innovation of entrepreneurship</strong> , and the <strong> power of networking</strong>  to create a space where you can thrive.
       </h3>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

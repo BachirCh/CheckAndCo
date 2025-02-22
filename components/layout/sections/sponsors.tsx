@@ -43,8 +43,11 @@ const sponsors: sponsorsProps[] = [
 export const SponsorsSection = () => {
   return (
     <section id="sponsors" className="max-w-[75%] mx-auto pb-24 sm:pb-32">
-      <h2 className="text-lg md:text-xl text-center mb-6">
-        Our Platinum Sponsors
+      <h2 className="text-lg md:text-xl text-center mb-6 ">
+        <span className="text-transparent pl-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
+          Members from
+        </span>
+
       </h2>
 
       <div className="mx-auto">
