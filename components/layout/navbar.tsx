@@ -7,11 +7,9 @@ import React from "react";
 import { Button } from "../ui/button";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
+  NavigationMenuList
 } from "../ui/navigation-menu";
 import { Separator } from "../ui/separator";
 import {
@@ -53,21 +51,6 @@ const routeList: RouteProps[] = [
   {
     href: "/gallery",
     label: "Gallery",
-  },
-];
-
-const featureList: FeatureProps[] = [
-  {
-    title: "Expand Your Network",
-    description: "Meet ambitious entrepreneurs and chess enthusiasts.",
-  },
-  {
-    title: "Compete & Improve",
-    description: "Join chess tournaments and strategic workshops.",
-  },
-  {
-    title: "Engage in Thoughtful Discussions",
-    description: "Participate in high-level business and strategy talks.",
   },
 ];
 
@@ -146,7 +129,7 @@ export const Navbar = () => {
       <div className="hidden lg:flex">
         {/* <ToggleTheme /> */}
         <Button asChild size="sm" variant="ghost" aria-label="Join Us">
-          <Link href="/join" aria-label="Join Checkmate&Connect">
+          <Link href="https://www.meetup.com/checkmate-connect-club-casablanca-chapter/" aria-label="Join Checkmate&Connect">
             Join Us
           </Link>
         </Button>
