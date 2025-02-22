@@ -29,7 +29,7 @@ export const HeroSection = () => {
           </div>
 
           <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-            Whether you're here for chess, entrepreneurship, or networking—you're in the right place.
+            Whether you&apos;re here for chess, entrepreneurship, or networking—you&apos;re in the right place.
           </p>
 
           <div className="space-y-4 md:space-y-0 md:space-x-4">

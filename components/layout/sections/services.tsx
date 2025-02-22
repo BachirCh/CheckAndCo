@@ -55,7 +55,7 @@ export const ServicesSection = () => {
         Empowering You to Win
       </h2>
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        Whether you're scaling a business or mastering strategy, our tailored services help you <span className="text-gray-100 font-medium"> think ahead and stay ahead</span>.
+        Whether you&apos;re scaling a business or mastering strategy, our tailored services help you <span className="text-gray-100 font-medium"> think ahead and stay ahead</span>.
       </h3>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 w-full lg:w-[60%] mx-auto">
