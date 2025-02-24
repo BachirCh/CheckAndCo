@@ -5,13 +5,15 @@ import { ArrowRight } from "lucide-react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
+import { SparklesCore } from "../sparkles";
+import { FloatingChessPieces } from "../floating-pieces";
 
 export const HeroSection = () => {
   const { theme } = useTheme();
   return (
     <section className="container w-full">
       <div 
-        className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32"
+        className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32 z-[100]"
         data-aos="fade-up"
       >
         <div className="text-center space-y-8">
@@ -67,12 +69,12 @@ export const HeroSection = () => {
           </div>
         </div>
 
-        <div className="relative group mt-14" data-aos="fade-up" data-aos-delay="400">
+        <div className="relative group mt-14 z-40" data-aos="fade-up" data-aos-delay="400">
           <div className="absolute top-2 lg:-top-8 left-1/2 transform -translate-x-1/2 w-[90%] mx-auto h-24 lg:h-80 bg-primary/50 rounded-full blur-3xl"></div>
           <Image
             width={1200}
             height={1200}
-            className="w-full md:w-[1200px] mx-auto rounded-lg relative border border-t-2 border-secondary border-t-primary/30"
+            className="w-full md:w-[1200px] mx-auto rounded-lg relative border border-t-2 border-secondary border-t-primary/30 z-50"
             src={theme === "light" ? "/hero-image-light.jpeg" : "/hero-image.png"}
             alt="Checkmate&Connect event"
           />

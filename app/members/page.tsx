@@ -53,10 +53,10 @@ const members = [
     "url": "https://www.linkedin.com/in/ali-el-kandoussi-8854a61a1/"
   },
   {
-    "firstName": "Chakib Abderahmane",
+    "firstName": "Chakib",
     "lastName": "DEKIK",
     "image": "https://res.cloudinary.com/dnamxu2im/image/upload/v1740401408/CheckAndCo/neykfieze2gtjdrvzt25.jpg",
-    "jobTitle": "Product Manager/ Facilitator",
+    "jobTitle": "Product Manager / Facilitator",
     "company": "UPPER TEAM",
     "url": "https://www.linkedin.com/in/chakib-dekik/"
   },
@@ -113,57 +113,48 @@ export default function Gallery() {
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-6">Gallery</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {members.map((member, index) => (
           <Card
             key={index}
             className="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg"
             data-aos="fade-up"
           >
-            <CardHeader className="gap-0 flex">
-              <CardTitle>
-                <div className="flex align-middle content-center gap-2 items-center">
-                  <Image
-                    src={member.image}
-                    alt=""
-                    width={300}
-                    height={300}
-                    className="aspect-square object-cover transition-all duration-200 ease-linear size-full group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.01] rounded-full w-10"
-                  />
-                  {member.firstName}
-                  <span className="text-primary ml-2">{member.lastName}</span>
-                </div>
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              {member.jobTitle}
-              {member.company &&
-                <span>&nbsp;@ {member.company}</span>
-              }
-            </CardContent>
-            {/* {positions.map((position, index) => (
-         <CardContent
-           key={index}
-           className={`pb-0 text-muted-foreground ${
-             index === positions.length - 1 && "pb-6"
-           }`}
-         >
-           {position}
-           {index < positions.length - 1 && <span>,</span>}
-         </CardContent>
-       ))} */}
+            <div className="flex items-start h-full">
+              <CardHeader className="p-2 aspect-[3/4] w-24 h-full">
+                <Image
+                  src={member.image}
+                  alt=""
+                  width={300}
+                  height={300}
+                  className="aspect-square object-cover transition-all duration-200 ease-linear size-full group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.01] rounded-md"
+                />
+              </CardHeader>
 
-            <CardFooter className="space-x-4 mt-auto">
-              <Link
-                key={index}
-                href={member.url}
-                target="_blank"
-                className="hover:opacity-80 transition-all"
-              >
-                <LinkedInIcon />
-              </Link>
-            </CardFooter>
+              <CardContent className="flex flex-col justify-between h-full p-3">
+                <div className="flex flex-col">
+                  <div className="text-lg font-medium">
+                    {member.firstName}
+                    <span className="text-primary ml-2">{member.lastName}</span>
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    {member.jobTitle}
+                    {member.company && <span>&nbsp;@ {member.company}</span>}
+                  </div>
+                </div>
+                <Link
+                  key={index}
+                  href={member.url}
+                  target="_blank"
+                  className="hover:opacity-80 transition-all"
+                >
+                  <LinkedInIcon />
+                </Link>
+              </CardContent>
+            </div>
+
           </Card>
+
         ))}
       </div>
     </div>

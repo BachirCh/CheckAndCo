@@ -1,3 +1,4 @@
+import { FloatingChessPieces } from "@/components/layout/floating-pieces";
 import { BenefitsSection } from "@/components/layout/sections/benefits";
 import { CommunitySection } from "@/components/layout/sections/community";
 import { ContactSection } from "@/components/layout/sections/contact";
@@ -9,6 +10,7 @@ import { ServicesSection } from "@/components/layout/sections/services";
 import { SponsorsSection } from "@/components/layout/sections/sponsors";
 import { TeamSection } from "@/components/layout/sections/team";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
+import { SparklesCore } from "@/components/layout/sparkles";
 
 export const metadata = {
   title: "Checkmate&Connect | Where Chess Meets Business",
@@ -41,18 +43,36 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <HeroSection />
-      <SponsorsSection />
-      <BenefitsSection />
-      <FeaturesSection />
-      <ServicesSection />
-      <TestimonialSection />
-      {/* <TeamSection /> */}
-      <CommunitySection />
-      {/* <PricingSection /> */}
-      <ContactSection />
-      <FAQSection />
-      <FooterSection />
+      <div className="absolute inset-0 z-0">
+        <SparklesCore
+          id="tsparticlesfullpage"
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.4}
+          particleDensity={700}
+          className="w-full h-100dvh"
+          particleColor={"#FFFFFF"}
+        />
+      </div>
+
+      {/* Floating chess pieces */}
+      <div className="absolute inset-0 z-20 pointer-events-none">
+        <FloatingChessPieces count={25} />
+      </div>
+      <div className="z-50">
+        <HeroSection />
+        <SponsorsSection />
+        <BenefitsSection />
+        <FeaturesSection />
+        <ServicesSection />
+        <TestimonialSection />
+        {/* <TeamSection /> */}
+        <CommunitySection />
+        {/* <PricingSection /> */}
+        <ContactSection />
+        <FAQSection />
+        <FooterSection />
+      </div>
     </>
   );
 }
