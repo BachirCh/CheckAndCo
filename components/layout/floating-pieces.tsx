@@ -6,11 +6,10 @@ import { FaChessBishop, FaChessKing, FaChessKnight, FaChessPawn, FaChessQueen, F
 
 const chessIcons = [FaChessKing, FaChessKnight, FaChessPawn, FaChessQueen, FaChessBishop, FaChessRook]
 
-export function FloatingChessPieces({ count = 50 }) {
+export default function FloatingChessPieces({ count = 50 }) {
     const getPageHeight = () => document.documentElement.scrollHeight;
 
     const [dimensions, setDimensions] = useState({ width: 1200, height: getPageHeight() })
-    const x = useMotionValue(0)
 
     useEffect(() => {
         setDimensions({

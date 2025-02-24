@@ -12,7 +12,7 @@ interface SparklesProps {
     particleColor?: string
 }
 
-export const SparklesCore = ({
+ const SparklesCore = ({
     id = "tsparticles",
     background = "transparent",
     minSize = 0.6,
@@ -136,3 +136,4 @@ export const SparklesCore = ({
     )
 }
 
+export default SparklesCore;

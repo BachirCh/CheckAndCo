@@ -1,4 +1,3 @@
-import { FloatingChessPieces } from "@/components/layout/floating-pieces";
 import { BenefitsSection } from "@/components/layout/sections/benefits";
 import { CommunitySection } from "@/components/layout/sections/community";
 import { ContactSection } from "@/components/layout/sections/contact";
@@ -8,9 +7,14 @@ import { FooterSection } from "@/components/layout/sections/footer";
 import { HeroSection } from "@/components/layout/sections/hero";
 import { ServicesSection } from "@/components/layout/sections/services";
 import { SponsorsSection } from "@/components/layout/sections/sponsors";
-import { TeamSection } from "@/components/layout/sections/team";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
-import { SparklesCore } from "@/components/layout/sparkles";
+import dynamic from "next/dynamic";
+const SparklesCore = dynamic(() => import('../../components/layout/sparkles'), {
+  ssr: false
+})
+const FloatingChessPieces = dynamic(() => import('../../components/layout/floating-pieces'), {
+  ssr: false
+})
 
 export const metadata = {
   title: "Checkmate&Connect | Where Chess Meets Business",

@@ -5,8 +5,6 @@ import { ArrowRight } from "lucide-react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
-import { SparklesCore } from "../sparkles";
-import { FloatingChessPieces } from "../floating-pieces";
 
 export const HeroSection = () => {
   const { theme } = useTheme();
