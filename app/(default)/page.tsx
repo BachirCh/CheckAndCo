@@ -69,7 +69,7 @@ export default function Home() {
         <BenefitsSection />
         <FeaturesSection />
         <ServicesSection />
-        <TestimonialSection />
+        {/* <TestimonialSection /> */}
         {/* <TeamSection /> */}
         <CommunitySection />
         {/* <PricingSection /> */}
