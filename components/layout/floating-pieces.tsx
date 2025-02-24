@@ -29,7 +29,7 @@ export default function FloatingChessPieces({ count = 50 }) {
     }, [])
 
     return (
-        <div className="relative w-full h-full">
+        <div className="relative w-full h-full overflow-x-hidden">
             {Array.from({ length: count }).map((_, i) => {
                 const Icon = chessIcons[i % chessIcons.length]
                 return (
