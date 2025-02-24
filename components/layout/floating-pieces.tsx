@@ -1,6 +1,6 @@
 "use client"
 
-import { motion, useMotionValue } from "framer-motion";
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { FaChessBishop, FaChessKing, FaChessKnight, FaChessPawn, FaChessQueen, FaChessRook } from "react-icons/fa6";
 
@@ -9,7 +9,7 @@ const chessIcons = [FaChessKing, FaChessKnight, FaChessPawn, FaChessQueen, FaChe
 export default function FloatingChessPieces({ count = 50 }) {
     const getPageHeight = () => document.documentElement.scrollHeight;
 
-    const [dimensions, setDimensions] = useState({ width: 1200, height: getPageHeight() })
+    const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: getPageHeight() })
 
     useEffect(() => {
         setDimensions({

@@ -153,3 +153,8 @@ html {
     @apply bg-background text-foreground;
   }
 }
+
+canvas {
+  max-width: 100vw !important;
+  overflow: hidden;
+}

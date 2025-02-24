@@ -1,5 +1,6 @@
 "use client"
 
+import { cn } from "@/lib/utils"
 import { useEffect, useRef, useState } from "react"
 
 interface SparklesProps {
@@ -21,16 +22,16 @@ interface SparklesProps {
     className = "h-full w-full",
     particleColor = "#FFFFFF",
 }: SparklesProps) => {
-
+    const getPageWidth = () => window.innerWidth;
     const getPageHeight = () => document.documentElement.scrollHeight;
     const canvasRef = useRef<HTMLCanvasElement>(null)
-    const [dimensions, setDimensions] = useState({ width: 1200, height: getPageHeight() })
+    const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: getPageHeight() })
 
     useEffect(() => {
         if (typeof window === "undefined") return
 
         setDimensions({
-            width: window.innerWidth,
+            width: getPageWidth(),
             height: getPageHeight(),
         })
 
@@ -43,8 +44,9 @@ interface SparklesProps {
         let particles: Particle[] = []
         let animationFrameId: number
 
-        canvas.width = window.innerWidth
+        canvas.width = getPageWidth()
         canvas.height = getPageHeight()
+
 
         class Particle {
             x: number
@@ -105,10 +107,10 @@ interface SparklesProps {
         const handleResize = () => {
             if (typeof window === "undefined") return
 
-            canvas.width = window.innerWidth
+            canvas.width = getPageWidth()
             canvas.height = getPageHeight()
             setDimensions({
-                width: window.innerWidth,
+                width: getPageWidth(),
                 height: getPageHeight(),
             })
             init()
@@ -126,7 +128,7 @@ interface SparklesProps {
         <canvas
             ref={canvasRef}
             id={id}
-            className={className}
+            className={`${className} max-w-full`}
             style={{
                 background,
                 width: dimensions.width,
