@@ -37,9 +37,9 @@ const benefitList: BenefitsProps[] = [
 
 export const BenefitsSection = () => {
   return (
-    <section id="benefits" className="container py-24 sm:py-32">
+    <section id="benefits" className="container py-24 sm:py-32" data-aos="fade-up">
       <div className="grid lg:grid-cols-2 place-items-center lg:gap-24">
-        <div>
+        <div data-aos="fade-right">
           <h2 className="text-lg text-primary mb-2 tracking-wider">Why Join?</h2>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -56,6 +56,8 @@ export const BenefitsSection = () => {
             <Card
               key={title}
               className="bg-muted/50 dark:bg-card hover:bg-background transition-all delay-75 group/number"
+              data-aos="zoom-in"
+              data-aos-delay={index * 100}
             >
               <CardHeader>
                 <div className="flex justify-between">

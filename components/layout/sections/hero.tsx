@@ -10,16 +10,23 @@ export const HeroSection = () => {
   const { theme } = useTheme();
   return (
     <section className="container w-full">
-      <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
+      <div 
+        className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32"
+        data-aos="fade-up"
+      >
         <div className="text-center space-y-8">
-          <Badge variant="outline" className="text-sm py-2">
+          <Badge variant="outline" className="text-sm py-2" data-aos="zoom-in">
             <span className="mr-2 text-primary">
               <Badge>Welcome</Badge>
             </span>
             <span> Join Our Growing Community </span>
           </Badge>
 
-          <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
+          <div 
+            className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <h1>
               Connect, Learn,
               <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
@@ -28,15 +35,22 @@ export const HeroSection = () => {
             </h1>
           </div>
 
-          <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
+          <p 
+            className="max-w-screen-sm mx-auto text-xl text-muted-foreground"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             Whether you&apos;re here for chess, entrepreneurship, or networking—you&apos;re in the right place.
           </p>
 
-          <div className="space-y-4 md:space-y-0 md:space-x-4">
-
+          <div 
+            className="space-y-4 md:space-y-0 md:space-x-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <Button
               asChild
-              className="w-5/6 md:w-1/4 font-bold group/arrow "
+              className="w-5/6 md:w-1/4 font-bold group/arrow"
             >
               <Link href="https://www.meetup.com/checkmate-connect-club-casablanca-chapter/">Join Next Event
                 <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
@@ -48,12 +62,12 @@ export const HeroSection = () => {
               variant="secondary"
               className="w-5/6 md:w-1/4 font-bold"
             >
-              <Link href="https://www.meetup.com/checkmate-connect-club-casablanca-chapter/">Contact us</Link>
+              <Link href="/#contact">Contact us</Link>
             </Button>
           </div>
         </div>
 
-        <div className="relative group mt-14">
+        <div className="relative group mt-14" data-aos="fade-up" data-aos-delay="400">
           <div className="absolute top-2 lg:-top-8 left-1/2 transform -translate-x-1/2 w-[90%] mx-auto h-24 lg:h-80 bg-primary/50 rounded-full blur-3xl"></div>
           <Image
             width={1200}

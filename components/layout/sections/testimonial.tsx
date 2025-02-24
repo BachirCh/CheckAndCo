@@ -69,63 +69,65 @@ const reviewList: ReviewProps[] = [
 
 export const TestimonialSection = () => {
   return (
-    <section id="testimonials" className="container py-24 sm:py-32">
-      <div className="text-center mb-8">
-        <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-          Testimonials
-        </h2>
+    <section id="testimonials" className="container py-24 sm:py-32" data-aos="fade-up">
+    <div className="text-center mb-8">
+      <h2 className="text-lg text-primary text-center mb-2 tracking-wider" data-aos="fade-right">
+        Testimonials
+      </h2>
 
-        <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-          What Leaders & Innovators Say
-        </h2>
-      </div>
+      <h2 className="text-3xl md:text-4xl text-center font-bold mb-4" data-aos="fade-left">
+        What Leaders & Innovators Say
+      </h2>
+    </div>
 
-      <Carousel
-        opts={{
-          align: "start",
-        }}
-        className="relative w-[80%] sm:w-[90%] lg:max-w-screen-xl mx-auto"
-      >
-        <CarouselContent>
-          {reviewList.map(({ image, name, userName, comment, rating }) => (
-            <CarouselItem key={name} className="md:basis-1/2 lg:basis-1/3">
-              <Card className="bg-muted/50 dark:bg-card">
-                <CardContent className="pt-6 pb-0">
-                  <div className="flex gap-1 pb-6">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className={`size-4 ${
-                          i < Math.floor(rating)
-                            ? "fill-primary text-primary"
-                            : "fill-muted text-muted"
-                        }`}
-                      />
-                    ))}
+    <Carousel
+      opts={{
+        align: "start",
+      }}
+      className="relative w-[80%] sm:w-[90%] lg:max-w-screen-xl mx-auto"
+      data-aos="fade-up"
+      data-aos-delay="200"
+    >
+      <CarouselContent>
+        {reviewList.map(({ image, name, userName, comment, rating }, index) => (
+          <CarouselItem key={name} className="md:basis-1/2 lg:basis-1/3" data-aos="zoom-in" data-aos-delay={index * 100}>
+            <Card className="bg-muted/50 dark:bg-card">
+              <CardContent className="pt-6 pb-0">
+                <div className="flex gap-1 pb-6">
+                  {[...Array(5)].map((_, i) => (
+                    <Star
+                      key={i}
+                      className={`size-4 ${
+                        i < Math.floor(rating)
+                          ? "fill-primary text-primary"
+                          : "fill-muted text-muted"
+                      }`}
+                    />
+                  ))}
+                </div>
+                {`"${comment}"`}
+              </CardContent>
+
+              <CardHeader>
+                <div className="flex flex-row items-center gap-4">
+                  <Avatar>
+                    <AvatarImage src={image} alt={name} />
+                    <AvatarFallback>{name[0]}</AvatarFallback>
+                  </Avatar>
+
+                  <div className="flex flex-col">
+                    <CardTitle className="text-lg">{name}</CardTitle>
+                    <CardDescription>{userName}</CardDescription>
                   </div>
-                  {`"${comment}"`}
-                </CardContent>
-
-                <CardHeader>
-                  <div className="flex flex-row items-center gap-4">
-                    <Avatar>
-                      <AvatarImage src={image} alt={name} />
-                      <AvatarFallback>{name[0]}</AvatarFallback>
-                    </Avatar>
-
-                    <div className="flex flex-col">
-                      <CardTitle className="text-lg">{name}</CardTitle>
-                      <CardDescription>{userName}</CardDescription>
-                    </div>
-                  </div>
-                </CardHeader>
-              </Card>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
-    </section>
+                </div>
+              </CardHeader>
+            </Card>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
+  </section>
   );
 };

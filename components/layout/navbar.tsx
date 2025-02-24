@@ -26,27 +26,24 @@ interface RouteProps {
   label: string;
 }
 
-interface FeatureProps {
-  title: string;
-  description: string;
-}
+
 
 const routeList: RouteProps[] = [
   {
-    href: "#testimonials",
+    href: "/#testimonials",
     label: "Testimonials",
   },
   {
-    href: "#team",
-    label: "Team",
-  },
-  {
-    href: "#contact",
+    href: "/#contact",
     label: "Contact",
   },
   {
-    href: "#faq",
+    href: "/#faq",
     label: "FAQ",
+  },
+  {
+    href: "/members",
+    label: "Members",
   },
   {
     href: "/gallery",
@@ -128,7 +125,7 @@ export const Navbar = () => {
 
       <div className="hidden lg:flex">
         {/* <ToggleTheme /> */}
-        <Button asChild size="sm" variant="ghost" aria-label="Join Us">
+        <Button asChild size="sm" aria-label="Join Us">
           <Link href="https://www.meetup.com/checkmate-connect-club-casablanca-chapter/" aria-label="Join Checkmate&Connect">
             Join Us
           </Link>

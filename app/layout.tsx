@@ -3,8 +3,10 @@ import { ThemeProvider } from "@/components/layout/theme-provider";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Sora } from "next/font/google";
 import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
+const grotesk = Sora({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Checkmate&Connect | Where Chess Meets Business",
@@ -18,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" suppressHydrationWarning>
-      <body className={cn("min-h-screen bg-background", inter.className)}>
+      <body className={cn("min-h-screen bg-background", inter.className, grotesk.className)}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

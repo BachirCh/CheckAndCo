@@ -11,27 +11,27 @@ import { TeamSection } from "@/components/layout/sections/team";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
 
 export const metadata = {
-  title: "Shadcn - Landibng template",
-  description: "Free Shadcn landing page for developers",
+  title: "Checkmate&Connect | Where Chess Meets Business",
+  description: "Join a vibrant community of chess enthusiasts and entrepreneurs. Discover events, tournaments, and networking opportunities that blend strategic thinking with business acumen.",
   openGraph: {
     type: "website",
     url: "https://github.com/nobruf/shadcn-landing-page.git",
-    title: "Shadcn - Landing template",
-    description: "Free Shadcn landing page for developers",
+    title: "Checkmate&Connect | Where Chess Meets Business",
+    description: "Join a vibrant community of chess enthusiasts and entrepreneurs. Discover events, tournaments, and networking opportunities that blend strategic thinking with business acumen.",
     images: [
       {
         url: "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
         width: 1200,
         height: 630,
-        alt: "Shadcn - Landing template",
+        alt: "Checkmate&Connect | Where Chess Meets Business",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     site: "https://github.com/nobruf/shadcn-landing-page.git",
-    title: "Shadcn - Landing template",
-    description: "Free Shadcn landing page for developers",
+    title: "Checkmate&Connect | Where Chess Meets Business",
+    description: "Join a vibrant community of chess enthusiasts and entrepreneurs. Discover events, tournaments, and networking opportunities that blend strategic thinking with business acumen.",
     images: [
       "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
     ],
@@ -47,7 +47,7 @@ export default function Home() {
       <FeaturesSection />
       <ServicesSection />
       <TestimonialSection />
-      <TeamSection />
+      {/* <TeamSection /> */}
       <CommunitySection />
       {/* <PricingSection /> */}
       <ContactSection />
