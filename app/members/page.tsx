@@ -118,6 +118,7 @@ export default function Gallery() {
           <Card
             key={index}
             className="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg"
+            data-aos="fade-up"
           >
             <CardHeader className="gap-0 flex">
               <CardTitle>
