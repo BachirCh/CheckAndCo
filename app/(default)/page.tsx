@@ -7,7 +7,6 @@ import { FooterSection } from "@/components/layout/sections/footer";
 import { HeroSection } from "@/components/layout/sections/hero";
 import { ServicesSection } from "@/components/layout/sections/services";
 import { SponsorsSection } from "@/components/layout/sections/sponsors";
-import { TestimonialSection } from "@/components/layout/sections/testimonial";
 import dynamic from "next/dynamic";
 const SparklesCore = dynamic(() => import('../../components/layout/sparkles'), {
   ssr: false
