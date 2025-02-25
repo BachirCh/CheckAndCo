@@ -126,7 +126,7 @@ export const Navbar = () => {
       <div className="hidden lg:flex">
         {/* <ToggleTheme /> */}
         <Button asChild size="sm" aria-label="Join Us">
-          <Link href="https://www.meetup.com/checkmate-connect-club-casablanca-chapter/" aria-label="Join Checkmate&Connect">
+          <Link href="https://www.meetup.com/checkmate-connect-club-casablanca-chapter/" aria-label="Join Checkmate&Connect" target='_blank'>
             Join Us
           </Link>
         </Button>

@@ -2,9 +2,9 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { FaChessBishop, FaChessKing, FaChessKnight, FaChessPawn, FaChessQueen, FaChessRook } from "react-icons/fa6";
+import { FaChessBishop, FaChessKnight, FaChessPawn, FaChessQueen, FaChessRook } from "react-icons/fa6";
 
-const chessIcons = [FaChessKing, FaChessKnight, FaChessPawn, FaChessQueen, FaChessBishop, FaChessRook]
+const chessIcons = [FaChessKnight, FaChessPawn, FaChessQueen, FaChessBishop, FaChessRook]
 
 export default function FloatingChessPieces({ count = 50 }) {
     const getPageHeight = () => document.documentElement.scrollHeight;
