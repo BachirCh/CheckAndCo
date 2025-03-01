@@ -148,7 +148,6 @@ html {
 @layer base {
   * {
     @apply border-border;
-    /* @apply outline outline-2 outline-red-500; */
   }
   body {
     @apply bg-background text-foreground;

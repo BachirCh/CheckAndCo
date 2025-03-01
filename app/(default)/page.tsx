@@ -53,7 +53,7 @@ export default function Home() {
           minSize={0.6}
           maxSize={1.4}
           particleDensity={700}
-          className="[100vh] w-[100vw] fixed inset-0 z-0"
+          className="h-[100vh] w-[100vw] fixed inset-0 z-0"
           particleColor={"#FFFFFF"}
         />
       </div>
