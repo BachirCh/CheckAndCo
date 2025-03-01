@@ -36,7 +36,7 @@ const serviceList: ServiceProps[] = [
 
 export const ServicesSection = () => {
   return (
-    <section id="services" className="container py-24 sm:py-32" data-aos="fade-up">
+    <section id="services" className="container py-24 sm:py-32 overflow-hidden" data-aos="fade-up">
     <h2 className="text-lg text-primary text-center mb-2 tracking-wider" data-aos="fade-right">
       Our Services
     </h2>

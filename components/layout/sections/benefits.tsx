@@ -37,7 +37,7 @@ const benefitList: BenefitsProps[] = [
 
 export const BenefitsSection = () => {
   return (
-    <section id="benefits" className="container py-24 sm:py-32" data-aos="fade-up">
+    <section id="benefits" className="container py-24 sm:py-32 overflow-hidden" data-aos="fade-up">
       <div className="grid lg:grid-cols-2 place-items-center lg:gap-24">
         <div data-aos="fade-right">
           <h2 className="text-lg text-primary mb-2 tracking-wider">Why Join?</h2>

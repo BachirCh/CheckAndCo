@@ -53,7 +53,7 @@ export default function Home() {
           minSize={0.6}
           maxSize={1.4}
           particleDensity={700}
-          className="w-full h-100dvh"
+          className="h-[100vh] w-[100vw] fixed inset-0 z-0"
           particleColor={"#FFFFFF"}
         />
       </div>
@@ -62,7 +62,7 @@ export default function Home() {
       <div className="absolute inset-0 z-20 pointer-events-none">
         <FloatingChessPieces count={25} />
       </div>
-      <div className="z-50">
+      <div className="z-50 w-full">
         <HeroSection />
         <SponsorsSection />
         <BenefitsSection />
